@@ -1,0 +1,43 @@
+body {
+  background-color: rgba(26, 24, 24, 0.384);
+  background-image: url();
+}
+
+/*GRADIENTE ANIMADO TEXTO*/
+.textogradiente {
+  color: #ffffff;
+  background: linear-gradient(
+    to right,
+    #e1f100 20%,
+    #1328e7 40%,
+    #d67419 60%,
+    #cf0fbf 80%
+  );
+  background-size: 200% auto;
+  text-decoration: bold;
+  color: rgb(0, 0, 0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
